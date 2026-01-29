@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #141e30, #243b55);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 60px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 22px;
+            background: #00c6ff;
+            color: black;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background: #00a3d9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Welcome, {{ username }} 👋</h1>
+    <p>You have successfully logged in.</p>
+
+    <a href="{% url 'logout' %}">Logout</a>
+</div>
+
+</body>
+</html>

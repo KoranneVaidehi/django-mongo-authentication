@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | MongoDjango</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MongoDjango</div>
+        <div class="nav-links">
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'signup' %}">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to MongoDjango 🚀</h1>
+        <p>Upload videos, detect deepfakes, and manage everything securely.</p>
+
+        <div class="buttons">
+            <a href="#" class="btn primary">Get Started</a>
+            <a href="#" class="btn secondary">Learn More</a>
+        </div>
+    </section>
+
+</body>
+</html>
